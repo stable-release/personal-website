@@ -25,7 +25,7 @@ npm run preview
 
 Services and first-person introduction are draft positioning for review. Service examples are illustrative possibilities, not past client work. No testimonials, clients, performance metrics, or credentials have been invented.
 
-The featured project is Suffice. Its overview is based on the protocol constitution. The overview distinguishes architectural requirements from implemented capabilities and explicitly notes that the constitution does not define an interoperable implementation. No public repository or demo URL has been supplied, so its action opens an overview and offers an email discussion. Add further projects only from confirmed project descriptions and links.
+The featured project is Suffice. Its overview follows the revised protocol constitution: discovery between unfamiliar participants, scoped agreements, and maintaining conditions across data exchange, streams, computation, and relaying. It distinguishes design requirements from implemented capabilities and notes that operational specifications remain necessary. No public repository or demo URL has been supplied, so its action opens an overview and offers an email discussion. Add further projects only from confirmed project descriptions and links.
 
 The contact form uses `mailto:` to prepare a draft addressed to kevin@kevinlinllc.com. It does not deliver email itself or store submissions. Visitors review and send in their email application. A direct email link is provided as a fallback. For in-page delivery, connect a form provider or backend.
 

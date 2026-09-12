@@ -63,14 +63,15 @@ function App() {
         <h2 id="projects-title">What I’m building</h2>
         <article className="featured-project">
           <div className="project-name"><h3>Suffice</h3></div>
-          <div className="project-info"><p>A common language for systems to negotiate what must be proven before an action is authorized, while reducing disclosure of underlying data.</p><button className="project-link" aria-expanded={projectOpen} aria-controls="project-overview" onClick={() => setProjectOpen(!projectOpen)}>{projectOpen ? 'Close project overview' : 'Read project overview'}{projectOpen ? <Minus size={18}/> : <Plus size={18}/>}</button></div>
+          <div className="project-info"><p>A protocol design for unfamiliar participants to discover requirements, agree on conditions, and exchange data or perform operations under those terms.</p><button className="project-link" aria-expanded={projectOpen} aria-controls="project-overview" onClick={() => setProjectOpen(!projectOpen)}>{projectOpen ? 'Close project overview' : 'Read project overview'}{projectOpen ? <Minus size={18}/> : <Plus size={18}/>}</button></div>
           <div className="project-overview" id="project-overview" hidden={!projectOpen}>
-            <h4>Prove what’s needed for an action.</h4>
-            <p>The design lets people, devices, services, and software agents agree on requirements and acceptable proof methods. Evidence is bound to the action, network, participants, and session it belongs to.</p>
-            <h4>Keep three decisions separate.</h4>
-            <dl className="proof-decisions"><div><dt>Proof validity</dt><dd>Is the evidence valid for the stated proposition?</dd></div><div><dt>Current status</dt><dd>Is the relevant membership or authority still acceptable?</dd></div><div><dt>Authorization</dt><dd>Does the active policy permit this action?</dd></div></dl>
-            <p>The kernel leaves authority models, proof systems, and transports replaceable. Privacy depends on the selected profile and what it discloses.</p>
-            <p className="project-caveat">The constitution sets design requirements. It does not yet define an interoperable implementation; decisions about offline behavior, receipts, and delegation remain open.</p>
+            <h4>Communicate without a prior relationship.</h4>
+            <p>Suffice is being designed for people, devices, applications, services, and software agents that do not already share membership, authorities, or policies. Participants can begin discovery without enrolling in a common network, while retaining control over the evidence, disclosures, and operations they accept.</p>
+            <h4>Carry the agreement into the exchange.</h4>
+            <dl className="proof-decisions"><div><dt>Discover requirements</dt><dd>Find the conditions and capabilities relevant to an interaction. Discovery alone grants no trust or access.</dd></div><div><dt>Establish an agreement</dt><dd>Resolve requirements with evidence or dependent interactions. Bind permissions to the operation, data scope, and actual participants.</dd></div><div><dt>Maintain the exchange</dt><dd>Apply agreed protections during delivery and processing. Revise or end the interaction when its conditions change.</dd></div></dl>
+            <p>The shared model covers individual requests, data objects, continuous streams, computation, and relaying. Permission to forward data does not itself grant permission to read it. Existing results can support later interactions only within their scope and reuse conditions.</p>
+            <p>Authority models, proof systems, data formats, and transports remain replaceable. Participants can refuse requirements or offer a less revealing result; privacy depends on the selected profile and its protections.</p>
+            <p className="project-caveat">The constitution defines the design’s boundaries, not an interoperable implementation. Discovery, data-path bindings, ongoing agreements, and resumption still need operational specifications.</p>
             <a className="project-link" href={`mailto:${email}?subject=Suffice`}>Discuss the project <ArrowUpRight size={18}/></a>
           </div>
         </article>
