@@ -71,7 +71,6 @@ function App() {
             <dl className="proof-decisions"><div><dt>Discover requirements</dt><dd>Find the conditions and capabilities relevant to an interaction. Discovery alone grants no trust or access.</dd></div><div><dt>Establish an agreement</dt><dd>Resolve requirements with evidence or dependent interactions. Bind permissions to the operation, data scope, and actual participants.</dd></div><div><dt>Maintain the exchange</dt><dd>Apply agreed protections during delivery and processing. Revise or end the interaction when its conditions change.</dd></div></dl>
             <p>The shared model covers individual requests, data objects, continuous streams, computation, and relaying. Permission to forward data does not itself grant permission to read it. Existing results can support later interactions only within their scope and reuse conditions.</p>
             <p>Authority models, proof systems, data formats, and transports remain replaceable. Participants can refuse requirements or offer a less revealing result; privacy depends on the selected profile and its protections.</p>
-            <p className="project-caveat">The constitution defines the design’s boundaries, not an interoperable implementation. Discovery, data-path bindings, ongoing agreements, and resumption still need operational specifications.</p>
             <a className="project-link" href={`mailto:${email}?subject=Suffice`}>Discuss the project <ArrowUpRight size={18}/></a>
           </div>
         </article>
